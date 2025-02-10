@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body>
+    <main>
+      <!-- Sign-up form start -->
+      <div class="wrapper">
+        <div class="sign-up-form">
+          <div class="illustration-img"></div>
+          <div class="text-content">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+              <li>
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span>Product discovery and building what matters</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span>Measuring to ensure updates are a success</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/icon-list.svg"
+                  alt="icon"
+                  class="icon"
+                />
+                <span>And much more!</span>
+              </li>
+            </ul>
+            <form action="#" id="form" novalidate>
+              <div class="labels">
+                <label for="email">Email address</label>
+                <span class="error-message">Valid email required</span>
+              </div>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="email@company.com"
+              />
+              <button type="submit" class="submit-button">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Sign-up form end -->
+
+        <!-- Success message start -->
+        <div class="success-message hidden">
+          <div class="success-message-content">
+            <div class="img">
+              <img
+                src="./assets/images/icon-success.svg"
+                alt="icon-success"
+                class="icon-success"
+              />
+            </div>
+            <div class="message-text">
+              <h2>Thanks for subscribing!</h2>
+              <p class="confirmation-message">
+                A confirmation email has been sent to
+                <span>ash@loremcompany.com</span>. Please open it and click the
+                button inside to confirm your subscription.
+              </p>
+              <button class="dismiss-btn">Dismiss message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Success message end -->
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

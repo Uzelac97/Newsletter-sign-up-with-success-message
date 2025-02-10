@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Primary color */
+  --clr-Tomato: hsl(4, 100%, 67%);
+
+  /* Neutral colors */
+  --clr-Dark-slate-gray: hsl(234, 29%, 20%);
+  --clr-Charcoal-grey: hsl(235, 18%, 26%);
+  --clr-Grey: hsl(231, 7%, 60%);
+  --clr-White: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-Dark-slate-gray);
+  background-color: var(--clr-White);
+}
+
+.sign-up-form {
+  display: block;
+}
+
+.text-content {
+  margin: 35px 25px 25px 25px;
+}
+
+.illustration-img {
+  background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--clr-Dark-slate-gray);
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 40px;
+}
+
+span {
+  line-height: 1.5;
+}
+
+.icon {
+  margin-right: 14px;
+  padding: 2px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 0.765rem;
+  color: var(--clr-Dark-slate-gray);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: var(--clr-Tomato);
+  display: none;
+  font-size: 0.765rem;
+  font-weight: 700;
+}
+
+#email {
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--clr-Grey);
+  color: var(--clr-Grey);
+  margin-bottom: 25px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#email:focus {
+  outline: none;
+  border: 1px solid var(--clr-Charcoal-grey);
+  color: var(--clr-Charcoal-grey);
+  font-weight: 500;
+}
+
+input.invalid-email {
+  border: 1px solid var(--clr-Tomato) !important;
+  outline: none;
+  background-color: rgb(253, 232, 232);
+}
+
+input.invalid-email::placeholder {
+  color: var(--clr-Tomato);
+  font-weight: 400;
+}
+
+button {
+  padding: 20px 28px 18px 28px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--clr-Dark-slate-gray);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.975rem;
+  text-align: center;
+  color: var(--clr-White);
+  margin-bottom: 32px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, #ff4c81, #ff7f32);
+  box-shadow: 0 14px 24px hsla(9, 98%, 58%, 0.5);
+}
+
+.success-message.hidden {
+  display: none !important;
+}
+
+.img {
+  margin: 150px 0 28px 0;
+}
+
+.success-message {
+  margin: 0 25px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.success-message p {
+  margin-bottom: 250px;
+}
+
+.success-message span {
+  font-weight: bold;
+}
+
+.confirmation-message {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.dismiss-btn {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .illustration-img {
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: var(--clr-Charcoal-grey);
+  }
+
+  .success-message-content {
+    background-color: var(--clr-White);
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .sign-up-form {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 980px;
+    height: 650px;
+    background-color: var(--clr-White);
+    border-radius: 26px;
+    box-sizing: border-box;
+  }
+
+  .illustration-img {
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93%;
+    width: 100%;
+    margin: 23px;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  .text-content {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 0;
+    padding: 28px 28px 0 28px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .success-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .success-message-content {
+    width: 58%;
+    border-radius: 26px;
+    padding: 0 74px;
+  }
+
+  .img {
+    margin: 52px 0;
+  }
+
+  h2 {
+    font-size: 3.7rem;
+    margin-bottom: 32px;
+  }
+
+  .success-message p {
+    margin-bottom: 42px;
+    padding-right: 34px;
+  }
+
+  .dismiss-btn {
+    margin-bottom: 78px;
+  }
+}
