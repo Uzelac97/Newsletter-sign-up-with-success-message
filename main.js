@@ -26,7 +26,7 @@ form.addEventListener("submit", (e) => {
 
 dismissButton.addEventListener("click", function () {
   successMessage.classList.add("hidden");
-  signUpForm.style.display = "block";
+  signUpForm.style.display = "flex";
   emailInput.value = "";
 });
 

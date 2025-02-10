@@ -28,7 +28,8 @@ body {
 }
 
 .sign-up-form {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-content {
